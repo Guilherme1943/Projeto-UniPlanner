@@ -1,4 +1,4 @@
-import { Image, ScrollView, StyleSheet, Text, useColorScheme, View, KeyboardAvoidingView, Platform } from "react-native";
+import { Image, ScrollView, StyleSheet, Text, useColorScheme, View, KeyboardAvoidingView, Platform, ActivityIndicator } from "react-native";
 
 import { Link } from "expo-router";
 
