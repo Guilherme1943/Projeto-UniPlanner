@@ -15,20 +15,22 @@ import { Colors } from '../theme/colors';
 import { User } from '../types';
 
 interface Props {
-  onLogin: (user: User) => void;
+  onLogin?: (user: User) => void;
 }
 
-export default function AuthScreen({ onLogin }: Props) {
+export default function AuthScreen({ onLogin = () => undefined }: Props) {
   const [mode, setMode] = useState<'login' | 'register'>('login');
   const [showPass, setShowPass] = useState(false);
   const [form, setForm] = useState({ name: '', email: '', course: '', password: '' });
 
   const handleSubmit = () => {
-    onLogin({
-      name: form.name || 'Max tsuribe',
-      email: form.email || 'max.tsuribe@email.com',
+    const userData = {
+      name: form.name || 'Ana Beatriz',
+      email: form.email || 'ana.beatriz@email.com',
       course: form.course || 'Análise e Desenvolvimento de Sistemas',
-    });
+    };
+
+    onLogin(userData);
   };
 
   return (

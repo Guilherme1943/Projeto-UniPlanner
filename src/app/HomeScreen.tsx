@@ -375,6 +375,7 @@ const styles = StyleSheet.create({
     fontSize: 11,
   },
   subjectSchedule: {
+    color: Colors.textMuted,
     fontSize: 11,
   },
   emptyState: {
