@@ -4,13 +4,13 @@ import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
 
 import { User, Task, Subject, Group, Reminder, TabName } from './src/types';
-import AuthScreen from './src/screens/AuthScreen';
-import HomeScreen from './src/screens/HomeScreen';
-import SubjectsScreen from './src/screens/SubjectsScreen';
-import TasksScreen from './src/screens/TasksScreen';
-import GroupsScreen from './src/screens/GroupsScreen';
-import RemindersScreen from './src/screens/RemindersScreen';
-import ProfileScreen from './src/screens/ProfileScreen';
+import AuthScreen from './src/app/AuthScreen';
+import HomeScreen from './src/app/HomeScreen';
+import SubjectsScreen from './src/app/SubjectsScreen';
+import TasksScreen from './src/app/TasksScreen';
+import GroupsScreen from './src/app/GroupsScreen';
+import RemindersScreen from './src/app/RemindersScreen';
+import ProfileScreen from './src/app/ProfileScreen';
 import { BottomNav } from './src/components/BottomNav';
 
 let _id = 100;

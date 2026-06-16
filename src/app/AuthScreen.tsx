@@ -25,8 +25,8 @@ export default function AuthScreen({ onLogin }: Props) {
 
   const handleSubmit = () => {
     onLogin({
-      name: form.name || 'Ana Beatriz',
-      email: form.email || 'ana.beatriz@email.com',
+      name: form.name || 'Max tsuribe',
+      email: form.email || 'max.tsuribe@email.com',
       course: form.course || 'Análise e Desenvolvimento de Sistemas',
     });
   };
